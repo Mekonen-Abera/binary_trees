@@ -67,7 +67,7 @@
 | 23. Rotate right | [104-binary_tree_rotate_right.c](./) |
 | 24. Is BST | [110-binary_tree_is_bst.c](./) |
 | 25. BST - Insert | [111-bst_insert.c, 0-binary_tree_node.c](./) |
-| 26. BST - Array to BST | [112-array_to_bst.c(./) |
+| 26. BST - Array to BST | [112-array_to_bst.c](./) |
 | 27. BST - Search | [113-bst_search.c](./) |
 | 28. BST - Remove | [114-bst_remove.c](./) |
 | 29. Big O #BST | [115-O](./) |
