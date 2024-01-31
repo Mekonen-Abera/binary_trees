@@ -31,41 +31,41 @@
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * You are allowed to use the standard library
-* In the following examples, the main.c files are shown as examples.
-* You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). 
+* In the following examples, the main.c files are shown as examples
+* You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account)
 * We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
 * The prototypes of all your functions should be included in your header file called binary_trees.h
 * Don’t forget to push your header file
 * All your header files should be include guarded
 
 # Project Breakdown
-## 0. New node 
+## 0. New node
 ### Write a function that creates a binary tree node
 * Prototype: binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 * Where parent is a pointer to the parent node of the node to create
 * And value is the value to put in the new node
 * When created, a node does not have any child
 * Your function must return a pointer to the new node, or NULL on failure
-## 1. Insert left 
+## 1. Insert left
 ### Write a function that inserts a node as the left-child of another node
 * Prototype: binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 * Where parent is a pointer to the node to insert the left-child in
 * And value is the value to store in the new node
 * Your function must return a pointer to the created node, or NULL on failure or if parent is NULL
 * If parent already has a left-child, the new node must take its place, and the old left-child must be set as the left-child of the new node.
-## 2. Insert right 
+## 2. Insert right
 ### Write a function that inserts a node as the right-child of another node
 * Prototype: binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 * Where parent is a pointer to the node to insert the right-child in
 * And value is the value to store in the new node
 * Your function must return a pointer to the created node, or NULL on failure or if parent is NULL
 * If parent already has a right-child, the new node must take its place, and the old right-child must be set as the right-child of the new node.
-## 3. Delete 
+## 3. Delete
 ### Write a function that deletes an entire binary tree
 * Prototype: void binary_tree_delete(binary_tree_t *tree);
 * Where tree is a pointer to the root node of the tree to delete
 * If tree is NULL, do nothing
-## 4. Is leaf 
+## 4. Is leaf
 ### Write a function that checks if a node is a leaf
 * Prototype: int binary_tree_is_leaf(const binary_tree_t *node);
 * Where node is a pointer to the node to check
@@ -81,21 +81,21 @@
 ### Write a function that goes through a binary tree using pre-order traversal
 * Prototype: void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 * Where tree is a pointer to the root node of the tree to traverse
-* And func is a pointer to a function to call for each node. 
+* And func is a pointer to a function to call for each node.
 * The value in the node must be passed as a parameter to this function.
 * If tree or func is NULL, do nothing
 ## 7. In-order traversal
 ### Write a function that goes through a binary tree using in-order traversal
 * Prototype: void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 * Where tree is a pointer to the root node of the tree to traverse
-* And func is a pointer to a function to call for each node. 
+* And func is a pointer to a function to call for each node.
 * The value in the node must be passed as a parameter to this function.
 * If tree or func is NULL, do nothing
 ## 8. Post-order traversal
 ### Write a function that goes through a binary tree using post-order traversal
 * Prototype: void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 * Where tree is a pointer to the root node of the tree to traverse
-* And func is a pointer to a function to call for each node. 
+* And func is a pointer to a function to call for each node.
 * The value in the node must be passed as a parameter to this function.
 * If tree or func is NULL, do nothing
 ## 9. Height
@@ -165,7 +165,7 @@
 ### Write a function that goes through a binary tree using level-order traversal
 * Prototype: void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 * Where tree is a pointer to the root node of the tree to traverse
-* And func is a pointer to a function to call for each node. 
+* And func is a pointer to a function to call for each node.
 * The value in the node must be passed as a parameter to this function.
 * If tree or func is NULL, do nothing
 ## 21. Is complete

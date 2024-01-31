@@ -26,7 +26,7 @@ int greater_than(const binary_tree_t *tree, int val)
 }
 
 /**
- * less_than - It check if all values in the tree are less than a specific value
+ * less_than - Checks if all values in the tree are less than a specific value
  * @tree: a pointer to the tree to check
  * @val: a value to check against
  * Done By: Mekonen Abera
@@ -50,7 +50,7 @@ int less_than(const binary_tree_t *tree, int val)
 }
 
 /**
- * binary_tree_is_bst - It checks if a binary tree is a valid binary search tree
+ * binary_tree_is_bst - Checks if a binary tree is a valid binary search tree
  * @tree: a pointer to the root node of the tree to check
  *
  * Return: 1 if tree is a valid BST, and 0 otherwise

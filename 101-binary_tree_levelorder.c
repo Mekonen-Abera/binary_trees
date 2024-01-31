@@ -22,7 +22,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_level - It perform a function on a specific level of a binary tree
+ * binary_tree_level - Performs a function on specific level of a binary tree
  * @tree: a pointer to the root of the tree
  * @l: level of the tree to perform a function on
  * @func: a function to be perform
@@ -43,7 +43,7 @@ void binary_tree_level(const binary_tree_t *tree, size_t l, void (*func)(int))
 }
 
 /**
- * binary_tree_levelorder - It traverses a binary tree using level-order traversal
+ * binary_tree_levelorder - Traverses a binary tree using level-order traversal
  * @tree: a pointer to the root node of the tree to traverse
  * @func: a pointer to a function to call for each node
  * Done by: Mekonen Abera
@@ -65,11 +65,13 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
  * @node: a const binary tree node
  * @next: a points to the next node
  */
+
 typedef struct node_s
 {
 	const binary_tree_t *node;
 	struct node_s *next;
-} ll;
+}
+ll;
 
 ll *append(ll *head, const binary_tree_t *btnode);
 void free_list(ll *head);
@@ -77,8 +79,9 @@ ll *get_children(ll *head, const binary_tree_t *parent);
 void levels_rec(ll *head, void (*func)(int));
 
 /**
- * binary_tree_levelorder - Goes through a binary tree using level-order traversal
+ * binary_tree_levelorder - Goes through a binary tree
  * @tree: a pointer to the root node of the tree to traverse
+ *
  * @func: a pointer to a function to call for each node.
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))

@@ -153,7 +153,7 @@ heap_t *perc_down(heap_t *node)
 /**
  * heap_extract - A function that extracts the root node of a Max Binary Heap
  * @root: a double pointer to root of tree
- * 
+ * Done by: Mekonen Abera
  * Return: The value stored in the root node
  */
 int heap_extract(heap_t **root)
